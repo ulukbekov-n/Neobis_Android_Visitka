@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".fisrtPage">
+
+    <ImageView
+        android:id="@+id/square"
+        android:layout_width="430dp"
+        android:layout_height="200dp"
+        android:background="@color/purple_700"
+        android:src="@drawable/rectangle_9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/aza"
+        android:layout_width="98dp"
+        android:layout_height="106dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/aza"
+        app:layout_constraintLeft_toLeftOf="@id/square"
+        app:layout_constraintTop_toTopOf="@id/square" />
+
+    <TextView
+        android:id="@+id/name1"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Dr. Novikov"
+
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        app:layout_constraintLeft_toRightOf="@id/aza"
+        app:layout_constraintStart_toEndOf="@+id/aza"
+        app:layout_constraintTop_toTopOf="@id/square"
+        android:layout_marginTop="50dp" />
+    <TextView
+        android:id="@+id/prof1"
+        android:layout_width="wrap_content"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/open_sans_extrabold"
+        android:text="Dentist"
+
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/name1"
+        app:layout_constraintStart_toEndOf="@+id/aza"
+        tools:layout_editor_absoluteY="78dp" />
+    <ImageView
+        android:id="@+id/tooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tooth1"
+        app:layout_constraintTop_toBottomOf="@id/square"
+        android:layout_marginTop="15sp"
+        />
+
+    <TextView
+        android:id="@+id/clinic"
+        android:layout_width="98dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="50sp"
+        android:fontFamily="@font/great_vibes"
+
+        android:text="Dental Clinic"
+        android:textColor="#322E78"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toRightOf="@+id/tooth"
+        app:layout_constraintTop_toBottomOf="@id/square" />
+
+    <TextView
+        android:id="@+id/friend"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="0sp"
+        android:fontFamily="@font/open_sans_light"
+
+        android:text="Your friendly Dental Friend"
+        android:textColor="#322E78"
+        android:textSize="9dp"
+        app:layout_constraintLeft_toRightOf="@+id/tooth"
+        app:layout_constraintTop_toBottomOf="@id/clinic" />
+
+    <Button
+        android:id="@+id/call_button"
+
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:layout_marginTop="50sp"
+        android:textColor="#FFFFFF"
+
+        app:layout_constraintTop_toBottomOf="@id/friend" />
+</androidx.constraintlayout.widget.ConstraintLayout>

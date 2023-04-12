@@ -20,7 +20,8 @@
         android:textSize="30sp" />
 
     <Button
-        android:id="@+id/text_button"
+        android:id="@+id/first_button"
+        
         android:layout_width="380sp"
         android:layout_height="60sp"
         android:layout_gravity="center_horizontal"
