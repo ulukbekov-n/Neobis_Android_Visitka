@@ -19,12 +19,13 @@ import com.example.neobis_android_visitka.databinding.ActivityMainBinding
         binding.thirdButton.text="Khalilova Munisa"
         binding.fourthButton.text="Alieva Adina"
         binding.fivethButton.text="Kolesova Victoria"
-        val firstButton: Button= findViewById(R.id.first_button)
+        val firstButton: Button= binding.firstButton
         firstButton.setOnClickListener({
             val fisrtPagePage = Intent(this, fisrtPage::class.java)
             startActivity(fisrtPagePage)
             finish()
         } )
+
 
 
     }

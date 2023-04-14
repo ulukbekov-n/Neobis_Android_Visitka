@@ -1,61 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center_vertical"
-    android:orientation="vertical"
+    android:layout_height="match_parent">
 
-    tools:context=".MainActivity">
-
-
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:fontFamily="sans-serif"
-        android:text="Doctor"
-        android:textColor="#000000"
-        android:textSize="30sp" />
+        android:layout_gravity="clip_vertical"
+        android:orientation="vertical"
 
-    <Button
-        android:id="@+id/first_button"
-        
-        android:layout_width="380sp"
-        android:layout_height="60sp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/text"
-        android:textSize="20sp"
-        android:textAlignment="gravity"/>
+        tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/second_button"
-        android:layout_width="380sp"
-        android:layout_height="60sp"
-        android:layout_gravity="center_horizontal"
-        android:text="Nurmatov Zamir"
-        android:textSize="20sp" />
 
-    <Button
-        android:id="@+id/third_button"
-        android:layout_width="380sp"
-        android:layout_height="60sp"
-        android:layout_gravity="center_horizontal"
-        android:text="Khalilova Munisa"
-        android:textSize="20sp" />
-    <Button
-        android:id="@+id/fourth_button"
-        android:layout_width="380sp"
-        android:layout_height="60sp"
-        android:layout_gravity="center_horizontal"
-        android:text="Khalilova Munisa"
-        android:textSize="20sp" />
-    <Button
-        android:id="@+id/fiveth_button"
-        android:layout_width="380sp"
-        android:layout_height="60sp"
-        android:layout_gravity="center_horizontal"
-        android:text="Khalilova Munisa"
-        android:textSize="20sp" />
-</LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif"
+            android:text="Doctor"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/first_button"
+
+            android:layout_width="380sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/text"
+            android:textAlignment="gravity"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/second_button"
+            android:layout_width="380sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Nurmatov Zamir"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/third_button"
+            android:layout_width="380sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Khalilova Munisa"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fourth_button"
+            android:layout_width="380sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Khalilova Munisa"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/fiveth_button"
+            android:layout_width="380sp"
+            android:layout_height="60sp"
+            android:layout_gravity="center_horizontal"
+            android:text="Khalilova Munisa"
+            android:textSize="20sp" />
+    </LinearLayout>
+</ScrollView>
