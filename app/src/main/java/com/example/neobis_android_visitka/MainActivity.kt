@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.cardview.widget.CardView
 import com.example.neobis_android_visitka.databinding.ActivityMainBinding
 
  class MainActivity : AppCompatActivity() {
@@ -25,7 +26,6 @@ import com.example.neobis_android_visitka.databinding.ActivityMainBinding
             startActivity(fisrtPagePage)
             finish()
         } )
-
 
 
     }
