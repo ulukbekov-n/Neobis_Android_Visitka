@@ -26,6 +26,12 @@ import com.example.neobis_android_visitka.databinding.ActivityMainBinding
             startActivity(fisrtPagePage)
             finish()
         } )
+        val secondButton: Button= binding.secondButton
+        secondButton.setOnClickListener({
+            val secondPagePage = Intent(this, Zamir::class.java)
+            startActivity(secondPagePage)
+            finish()
+        } )
 
 
     }
