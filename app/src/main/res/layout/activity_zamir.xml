@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:context=".Zamir">
+
+
+        <include
+            android:id="@+id/rec"
+            layout="@layout/rectangle"
+            android:layout_width="700dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toLeftOf="@id/main"
+            app:layout_constraintTop_toTopOf="@id/main" />
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/aza"
+            android:layout_width="98dp"
+            android:layout_height="106dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="49dp"
+            android:padding="5dp"
+            android:src="@drawable/aza"
+            app:layout_constraintLeft_toLeftOf="@id/rec"
+            app:layout_constraintTop_toTopOf="@id/rec"
+            app:shapeAppearanceOverlay="@style/circular"
+            app:strokeColor="@color/white"
+            app:strokeWidth="4dp" />
+
+        <TextView
+            android:id="@+id/name1"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Dr. Nurmatov"
+            android:textColor="#FFFFFF"
+            android:textSize="26dp"
+            app:layout_constraintLeft_toRightOf="@id/aza"
+            app:layout_constraintStart_toEndOf="@+id/aza"
+            app:layout_constraintTop_toTopOf="@id/rec" />
+
+        <TextView
+            android:id="@+id/prof1"
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Dentist"
+
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/aza"
+            app:layout_constraintTop_toBottomOf="@+id/name1"
+            tools:layout_editor_absoluteY="78dp" />
+
+        <ImageView
+            android:id="@+id/tooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/tooth1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rec" />
+
+        <TextView
+            android:id="@+id/clinic"
+            android:layout_width="98dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="61dp"
+            android:fontFamily="@font/great_vibes"
+
+            android:text="Dental Clinic"
+            android:textColor="#322E78"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toRightOf="@+id/tooth"
+            app:layout_constraintTop_toBottomOf="@id/rec" />
+
+        <TextView
+            android:id="@+id/friend"
+            android:layout_width="151dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/open_sans_light"
+
+            android:text="Your friendly Dental Friend"
+            android:textColor="#322E78"
+            android:textSize="12dp"
+            app:layout_constraintLeft_toRightOf="@+id/tooth"
+            app:layout_constraintTop_toBottomOf="@id/clinic" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/whatsApp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="156dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rec">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="51dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="64dp"
+                android:text="WhatsApp"
+                android:textColor="#003C68" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="36.4dp"
+                android:layout_marginTop="21dp"
+                android:clickable="true"
+                android:src="@drawable/whats"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tooth" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/call"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="156dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rec"
+            android:clickable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="51dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="64dp"
+                android:text="To Call"
+                android:textColor="#003C68" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="36.4dp"
+                android:layout_marginTop="21dp"
+                android:clickable="true"
+                android:src="@drawable/phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tooth" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mail"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="156dp"
+            android:layout_marginLeft="22dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toRightOf="@id/whatsApp"
+            app:layout_constraintTop_toBottomOf="@id/rec">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="51dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="64dp"
+                android:text="Email us"
+                android:textColor="#003C68" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="36.4dp"
+                android:layout_marginTop="21dp"
+                android:clickable="true"
+                android:src="@drawable/mail"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tooth" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/telegram"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="14dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whatsApp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="64dp"
+                android:text="Telegram"
+                android:textColor="#003C68" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="36.4dp"
+                android:layout_marginTop="21dp"
+                android:clickable="true"
+                android:src="@drawable/telegram"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tooth" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/web"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="14dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/call">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="83dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="64dp"
+                android:text="Visit website"
+                android:textColor="#003C68" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="36.4dp"
+                android:layout_marginTop="21dp"
+                android:clickable="true"
+                android:src="@drawable/inet"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tooth" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/savecontact"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="22dp"
+            app:cardElevation="8dp"
+            app:layout_constraintLeft_toRightOf="@id/telegram"
+            app:layout_constraintTop_toBottomOf="@id/mail">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:layout_width="84dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="64dp"
+                android:text="Save contact"
+                android:textColor="#003C68" />
+
+            <ImageView
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginLeft="36.4dp"
+                android:layout_marginTop="21dp"
+                android:clickable="true"
+                android:src="@drawable/book"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tooth" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Our Location"
+            android:textColor="#003C68"
+            android:textSize="18dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/web" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="188dp"
+            android:layout_height="51dp"
+            android:layout_marginLeft="28dp"
+            android:fontFamily="sans-serif-light"
+            android:text="Shopping center Asia Mall 1st floor"
+            android:textColor="#003C68"
+            android:textSize="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location" />
+
+        <TextView
+            android:id="@+id/linkto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/open_sans_extrabold"
+            android:text="Open map"
+            android:textColor="#924883"
+            android:textSize="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/location" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
